@@ -21,19 +21,19 @@ const NavBar = () => {
 
   return (
     <nav>
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-5 md:mx-40 p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-5 lg:mx-40 p-4">
         <Link href="/">
           <span className="text-2xl font-semibold whitespace-nowrap">Evan Luo</span>
         </Link>
         <button
           type="button"
-          className="inline-flex items-center w-10 h-10 justify-center text-sm md:hidden rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+          className="inline-flex items-center w-10 h-10 justify-center text-sm lg:hidden rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <span className="sr-only">Open main menu</span>
           <MenuIcon/>
         </button>
-        <div className="md:flex flex-wrap space-x-8 hidden">
+        <div className="lg:flex flex-wrap space-x-8 hidden">
           {pages.map(page => (
             <button key={page.path} onClick={() => scrollToHash(page.path)}>
               <span className="text-lg font-medium hover:text-blue-500">{page.name}</span>
@@ -41,14 +41,14 @@ const NavBar = () => {
           ))}
         </div>
       </div>
-      <div className={`md:hidden ${menuOpen ? "" : "hidden"} flex flex-col items-start max-w-screen-xl mx-5 px-4 space-y-2`}>
+      <div className={`lg:hidden ${menuOpen ? "" : "hidden"} flex flex-col items-start max-w-screen-xl mx-5 px-4 space-y-2`}>
         {pages.map(page => (
           <button key={page.path} onClick={() => scrollToHash(page.path)}>
             <span className="text-lg font-medium hover:text-blue-500">{page.name}</span>
           </button>
         ))}
       </div>
-      <div className={`mt-2 md:hidden ${menuOpen ? "" : "hidden"} border border-white`}/>
+      <div className={`mt-2 lg:hidden ${menuOpen ? "" : "hidden"} border border-white`}/>
     </nav>
   );
 }

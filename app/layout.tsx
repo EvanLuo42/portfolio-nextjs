@@ -19,7 +19,7 @@ export default function RootLayout({
         <header>
           <NavBar/>
         </header>
-        <main className="max-w-screen-xl mx-8 md:mx-40 md:p-4 mt-10">
+        <main className="max-w-screen-xl mx-8 lg:mx-40 lg:p-4 mt-10">
           {children}
         </main>
         <footer className="h-40"></footer>
