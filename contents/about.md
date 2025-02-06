@@ -1,0 +1,3 @@
+Ph.D. in computer science (MIT CSAIL), advised by Frédo Durand and Bill Freeman.
+
+I graduated with honor from Tsinghua University (Yao class) in July 2017. I worked on deep learning and computer vision, during my internship with Stephen Lin at Microsoft Research Asia. My undergrad thesis is on automatic (differentiable) photo post-processing using reinforcement learning & GANs (TOG & SIGGRAPH 2018). I completed my master thesis (The ChainQueen Differentiable Physical Simulator) with Wojciech Matusik in November 2018. My research has been partly supported by an Edwin Webster fellowship, a Snap Research fellowship, an Adobe Research fellowship, a Facebook Research fellowship, and a GPU gift from NVIDIA.
